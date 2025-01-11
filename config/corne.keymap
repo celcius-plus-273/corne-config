@@ -42,7 +42,7 @@
                         display-name = "Base";
                         bindings = <
    &kp Q    &kp W   &kp E   &kp R   &kp T       &kp Y       &kp U   &kp I       &kp O       &kp P
-   &kp A    &kp S   &kp D   &kp F   &kp G       &kp H       &kp J   &kp K       &kp L       &kp SEMI
+   &kp A    &kp S   &kp D   &kp F   &kp G       &kp H       &kp J   &kp K       &kp L       AS(SEMI)
    &kp Z    &kp X   &kp C   &kp V   &kp B       &kp N       &kp M   &kp COMMA   &kp DOT     &kp FSLH
                     &mo 1   &mo 2   &kp RET     &kp SPACE   &mo 3   &kp BSPC
                         >;
@@ -72,7 +72,7 @@
                         display-name = "Raise";
                         bindings = <
 
-   &kp F1    &kp F2     &kp F3      &kp F4      &kp F5          &kp F8    &kp F9    &kp F10     &kp F11   &kp F12
+   AS(N1)    AS(N2)     AS(N3)      AS(N4)      AS(N5)          AS(N6)    AS(N7)    AS(N8)      AS(N9)    AS(N0)
    AS(GRAVE) &kp LBRC   &kp LBKT    &kp LPAR    AS(MINUS)       AS(EQUAL) &kp RPAR  &kp RBKT    &kp RBRC  AS(SQT)
    &trans    &trans     &trans      &trans      &trans          &trans    &trans    &kp LT      &kp GT    &kp QMARK
                         &kp TAB     &trans      &kp DEL         &kp BSPC  &kp ESC   &kp TAB
@@ -88,7 +88,7 @@
                         display-name = "Move";
                         bindings = <
 
-   &trans       &trans      &trans      &trans      &kp DEL             &trans      &trans    &trans    &trans      &kp BSPC
+   &kp F1       &kp F2       &kp F3       &kp F4       &kp F5           &kp F8      &kp F9    &kp F10   &kp F11     &kp F12
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &kp LEFT    &kp DOWN  &kp UP    &kp RIGHT   AS(SQT) 
    &bt BT_CLR   &trans      &trans      &trans      &trans              &trans      &trans    &trans    &trans      AS(BSLH)
                             &kp TAB     &kp ESC     &kp DEL             &kp BSPC    &trans    &kp TAB
