@@ -44,7 +44,7 @@
    &kp Q    &kp W   &kp E   &kp R   &kp T       &kp Y       &kp U   &kp I       &kp O       &kp P
    &kp A    &kp S   &kp D   &kp F   &kp G       &kp H       &kp J   &kp K       &kp L       &kp SEMI
    &kp Z    &kp X   &kp C   &kp V   &kp B       &kp N       &kp M   &kp COMMA   &kp DOT     &kp FSLH
-                    &kp DEL &mo 1   &kp RET     &kp SPACE   &mo 2   &kp BSPC
+                    &mo 1   &mo 2   &kp RET     &kp SPACE   &mo 3   &kp LALT
                         >;
                 };
 
@@ -56,10 +56,10 @@
 //               | GUI |     | SPC |     | ENT | ESC | TAB |
                         display-name = "Lower";
                         bindings = <
-   AS(N1)       AS(N2)       AS(N3)       AS(N4)       AS(N5)           AS(N6)      AS(N7)    AS(N8)  AS(N9)      AS(N0)
-   &kp LGUI     &kp LALT     &kp LSHFT    &kp LCTL     &trans           &kp LEFT    &kp DOWN  &kp UP  &kp RIGHT   &trans 
-   &bt BT_CLR   &trans       &trans       &trans       &trans           &trans      &trans    &trans  &trans      &trans 
-                             &kp TAB      &trans       &kp RET          &kp SPACE   &kp ESC   &kp TAB
+   AS(N1)      AS(N2)       AS(N3)       AS(N4)       AS(N5)           AS(N6)      AS(N7)    AS(N8)    AS(N9)      AS(N0)
+   &kp LGUI    &kp LALT     &kp LSHFT    &kp LCTL     &trans           &trans      &kp RCTL  &kp RSHFT &kp LALT    &kp LGUI 
+   &trans      &trans       &trans       &trans       &trans           &trans      &trans    &trans    &trans        &trans 
+                            &trans       &kp TAB      &kp DEL          &kp BSPS    &kp ESC   &kp TAB
                         >;
                 };
 
@@ -72,15 +72,27 @@
                         display-name = "Raise";
                         bindings = <
 
-   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans    &trans    &trans      &trans    &kp DEL
-   AS(GRAVE) &kp LBRC    &kp LBKT    &kp LPAR    &trans             &trans    &kp RPAR  &kp RBKT    &kp RBRC  AS(SQT)
-   &trans    &trans      &trans      AS(MINUS)   &trans             &trans    AS(EQUAL) &trans      &trans    AS(BSLH)
-                         &kp TAB     &kp ESC     &kp SPACE          &kp RET   &trans    &kp TAB
+   &kp F1    &kp F2     &kp F3      &kp F4      &kp F5          &kp F8    &kp F9    &kp F10     &kp F11   &kp F12
+   AS(GRAVE) &kp LBRC   &kp LBKT    &kp LPAR    AS(MINUS)       AS(EQUAL) &kp RPAR  &kp RBKT    &kp RBRC  AS(SQT)
+   &trans    &trans     &trans      &trans      &trans          &trans    &trans    &trans      &trans    AS(BSLH)
+                        &kp TAB     &trans      &kp DEL         &kp BSPS  &kp ESC   &kp TAB
                         >;
                 };
 
-                extra_1 {
-                        status = "reserved";
+                move_laver {
+// -----------------------------------------------------------------------------------------
+// | 1! |  2@ |  3# |  4$ |  5% |     |  6^ |  7& |  8* |  9(  |  0)  |
+// | -_ |  =+ |  {  |  [  |  (  |     |  )  |  ]  |  }  |  /?  |  \|  |
+// | `~ |     |     |     |     |     |  ;  |  .> | CTRL| META |      |
+//            | GUI | ESC | SPC |     | ENT |     | TAB |
+                        display-name = "Move";
+                        bindings = <
+
+   &trans       &trans      &trans      &trans      &trnas              &trans      &trans    &trans    &trans      &kp BSPS
+   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &kp LEFT    &kp DOWN  &kp UP    &kp RIGHT   AS(SQT) 
+   &bt BT_CLR   &trans      &trans      &trans      &trans              &trans      &trans    &trans    &trans      AS(BSLH)
+                            &kp TAB     &kp ESC     &kp DEL             &kp BSPS    &trans    &kp TAB
+                        >;
                 };
 
                 extra_2 {
