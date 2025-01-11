@@ -74,7 +74,7 @@
 
    &kp F1    &kp F2     &kp F3      &kp F4      &kp F5          &kp F8    &kp F9    &kp F10     &kp F11   &kp F12
    AS(GRAVE) &kp LBRC   &kp LBKT    &kp LPAR    AS(MINUS)       AS(EQUAL) &kp RPAR  &kp RBKT    &kp RBRC  AS(SQT)
-   &trans    &trans     &trans      &trans      &trans          &trans    &trans    &trans      &trans    AS(BSLH)
+   &trans    &trans     &trans      &trans      &trans          &trans    &trans    &kp LT      &kp GT    &kp QMARK
                         &kp TAB     &trans      &kp DEL         &kp BSPC  &kp ESC   &kp TAB
                         >;
                 };
