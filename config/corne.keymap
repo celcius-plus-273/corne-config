@@ -74,7 +74,7 @@
 
    AS(N1)    AS(N2)     AS(N3)      AS(N4)      AS(N5)          AS(N6)    AS(N7)    AS(N8)      AS(N9)    AS(N0)
    &trans    &kp LBRC   &kp LBKT    &kp LPAR    AS(MINUS)       AS(EQUAL) &kp RPAR  &kp RBKT    &kp RBRC  AS(SQT)
-   &kp LSHFT &trans     &trans      &trans      &trans          &kp GRAVE &trans    &kp LT      &kp GT    &kp BLSH
+   &kp LSHFT &trans     &trans      &trans      &trans          &kp GRAVE &trans    &kp LT      &kp GT    &kp BSLH
                         &trans      &kp LGUI    &kp LCTL        &trans    &trans    &trans 
                         >;
                 };
