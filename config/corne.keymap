@@ -58,7 +58,7 @@
                         bindings = <
    &kp LG(Q)    &kp LG(W)   &kp LG(E) &kp LG(R)   &kp LG(T)       &kp FSLH    &kp N7    &kp N8    &kp N9   &kp MINUS
    &kp LG(A)    &kp LG(S)   &kp DEL   &kp LG(F)   &kp LSHFT       &kp STAR    &kp N4    &kp N5    &kp N6   &kp PLUS
-   &kp LG(Z)    &kp LG(X)   &kp LG(C) &kp LG(V)   &kp LGUI        &kp N0      &kp N1    &kp N2    &kp N3   &kp ENT
+   &kp LG(Z)    &kp LG(X)   &kp LG(C) &kp LG(V)   &kp LGUI        &kp N0      &kp N1    &kp N2    &kp N3   &kp ENTER
                             &trans    &trans      &trans          &kp ESC     &mo 3     &kp BSPC
                         >;
                 };
